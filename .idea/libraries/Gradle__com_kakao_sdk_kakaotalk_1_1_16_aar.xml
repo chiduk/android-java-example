@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kakao.sdk:kakaotalk:1.1.16@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/3ff8e991b34e53871aa426ab58f8b1eadee782e9/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3ff8e991b34e53871aa426ab58f8b1eadee782e9/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaotalk/1.1.16/a816e824eb17010ef44eb239e359c6249b6c4f44/kakaotalk-1.1.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

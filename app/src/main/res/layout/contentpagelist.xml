@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageview_content_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textview_survery_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_content_page"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/question_select_a_fav_brand"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/textview_survery_question">
+ <!--       <RadioButton
+            android:id="@+id/radiobutton_1"
+            android:drawableRight="@drawable/starbucks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radiobutton_2"
+            android:drawableRight="@drawable/caffebene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+        <RadioButton
+            android:id="@+id/radiobutton_3"
+            android:drawableRight="@drawable/hollys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+        <RadioButton
+            android:id="@+id/radiobutton_4"
+            android:drawableRight="@drawable/angelinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+        <RadioButton
+            android:id="@+id/radiobutton_5"
+            android:drawableRight="@drawable/ediya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+-->
+    </RadioGroup>
+    <Button
+        android:id="@+id/button_participate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup_survey"
+        android:text="@string/participate"/>
+
+
+
+</LinearLayout>

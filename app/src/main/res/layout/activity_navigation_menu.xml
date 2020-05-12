@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kr.co.toyappfactory.gosung.NavigationMenu">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:clickable="true">
+
+        <TableLayout
+            android:id="@+id/layout_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/row1col1"
+                    android:src="@drawable/cate_all_btn"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:id="@+id/row1col2"
+                    android:src="@drawable/cate_idol_male_btn"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:id="@+id/row1col3"
+                    android:src="@drawable/cate_idol_female_btn"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:id="@+id/row1col4"
+                    android:src="@drawable/cate_enter_btn"
+                    android:adjustViewBounds="true"/>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/row2"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/row2col1"
+                    android:src="@drawable/cate_sub_btn_1"
+                    android:adjustViewBounds="true"
+                    android:layout_span="2"/>
+                <ImageView
+                    android:id="@+id/row2col2"
+                    android:src="@drawable/cate_sub_btn_2"
+                    android:adjustViewBounds="true"
+                    android:layout_span="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/row3col1"
+                    />
+                <ImageView
+                    android:id="@+id/row3col2"
+                    />
+                <ImageView
+                    android:id="@+id/row3col3"
+                    />
+                <ImageView
+                    android:id="@+id/row3col4"
+                   />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row4"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/row4col1"
+                    />
+                <ImageView
+                    android:id="@+id/row4col2"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row5"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/row5col1"
+                    />
+                <ImageView
+                    android:id="@+id/row5col2"
+                   />
+                <ImageView
+                    android:id="@+id/row5col3"
+                   />
+                <ImageView
+                    android:id="@+id/row5col4"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row6"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/row6col1"
+                    />
+                <ImageView
+                    android:id="@+id/row6col2"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <ListView
+            android:id="@+id/listview_navMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_category"
+            android:layout_gravity="start"
+
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp"
+            android:background="#DDDDDD"/>
+
+
+        <TextView
+            android:id="@+id/textview_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

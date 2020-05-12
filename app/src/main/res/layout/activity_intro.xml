@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/introBackground"
+    tools:context="kr.co.toyappfactory.gosung.Intro">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/intro_bg" />
+
+    <Button
+        android:id="@+id/button_kakao_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="kakaoLogin"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="412dp"
+        android:layout_marginLeft="55dp">
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fblogin_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_facebook_login"
+            android:layout_width="wrap_content"
+            android:layout_height="36.31dp"
+            android:onClick="onClick"
+            android:background="@drawable/fb_login_btn"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="36.31dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="464dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/id_login_btn"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="530dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/button_join"
+            android:layout_width="wrap_content"
+            android:layout_height="25.14dp"
+            android:layout_marginRight="3dp"
+
+            android:background="@drawable/email_join_btn"/>
+        <Button
+            android:id="@+id/button_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="25.14dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/id_pw_find_btn"/>
+    </LinearLayout>
+</RelativeLayout>

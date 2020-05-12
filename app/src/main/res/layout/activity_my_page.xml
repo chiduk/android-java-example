@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="kr.co.toyappfactory.gosung.MyPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#B0B0B0">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageview_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            fresco:roundAsCircle="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/non_pic"/>
+        <TextView
+            android:id="@+id/textview_birthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"/>
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="10dp"/>
+        <TextView
+            android:id="@+id/textview_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textview_brand_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="10dp"/>
+        <ImageButton
+            android:id="@+id/imagebutton_modify_my_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myinfomod_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/late_myesti_info_tit"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_horizontal_liked_brands"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myarticle_tit"/>
+        <ImageButton
+            android:id="@+id/button_more_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_ico"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_my_feed"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_coupon_tit"/>
+        <ImageButton
+            android:id="@+id/button_more_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_ico"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_horizontal_issued_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+</LinearLayout>

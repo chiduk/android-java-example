@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.toyappfactory.gosung">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <permission
+        android:name="kr.co.toyappfactory.emocial.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="kr.co.toyappfactory.emocial.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BrandSelection" />
+        <activity android:name=".EmotionSelection" />
+        <activity
+            android:name=".menu.CategorySelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.Contents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.CouponBox"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.MyBrand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.NewsFeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.Review"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.ScoreCategorySelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Scoreboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BrandLikeAndDislikeCount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectionResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BrandPage"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TypeSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContentPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Join"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneNumberVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLogInInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Share"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".terms.TermsOfUse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".terms.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BrandSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Post"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CustomGallery" />
+        <activity
+            android:name=".PostSingleView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyCoupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IssuedCouponDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Review"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Comments"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ReviewSingleView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyReview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchResult"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProductInfo"></activity>
+    </application>
+
+</manifest>

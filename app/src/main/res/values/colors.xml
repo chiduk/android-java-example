@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="topBar">#1be9b6</color>
+    <color name="bottomBar">#1b1a1a</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="mint">#51d5bc</color>
+    <color name="viewPagerTop">#949799</color>
+    <color name="introBackground">#6BADD6</color>
+    <color name="gray">#F5F5F5</color>
+</resources>

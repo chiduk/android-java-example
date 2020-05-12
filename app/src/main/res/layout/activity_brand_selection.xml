@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="kr.co.toyappfactory.gosung.BrandSelection">
+
+    <EditText
+        android:id="@+id/edittext_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <GridView
+        android:id="@+id/gridview_brand_selection"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+
+        android:columnWidth="300dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="50dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:scrollbars="none">
+    </GridView>
+
+</LinearLayout>
